@@ -1,0 +1,20 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Flask Starter</title>
+    <!--reference local css files using this Flask syntax-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+
+</head>
+<body >
+    <h1>Hello world</h1>
+    <p>If you can read this after starting your Flask server and navigating to http://localhost:5000, it works</p>
+
+    <!-- reference online JS files using this syntax -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- reference local JS files using this Flask syntax -->
+    <script src="{{ url_for('static', filename='app.js') }}" type="text/javascript"></script>
+</body>
+</html>
